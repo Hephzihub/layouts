@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+}
+
+header a {
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 50px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 70vh;
+}
+
+/* Tabs */
+
+main .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px 0 0 20px;
+}
+
+main .suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+main .lux {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 20px 20px 0;
+}
+
+main .tabs {
+    height: 100%;
+    width: 33.33%;
+    padding: 35px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Tabs Content */
+
+.tabs .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tabs .content img {
+    align-self: flex-start;
+}
+
+.tabs h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+.tabs p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.tabs .button {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1.5px solid white;
+    transition: .2s ease-in-out;
+}
+
+.sedan .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv .button {
+    color: hsl(184, 100%, 22%);
+}
+
+.lux .button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan .button:hover,
+.suv .button:hover,
+.lux .button:hover {
+    color: #fff;
+    background-color: transparent;
+}
